@@ -1,0 +1,13 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon EC2,0,1221.1,14653.2,USD,"Operating system (Linux), Quantity (5), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (2 TB), Instance type (m5a.large)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,5209.72,62516.64,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (10 TB), Quantity (2), Instance type (db.m5.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,85.41,1024.92,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,S3 Standard,0,235.52,2826.24,USD,S3 Standard storage (10 TB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,"DT Inbound: All other regions (5 TB per month), DT Outbound: Amazon CloudFront (5 TB per month)"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,987.3,11847.6,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Data Transfer,0,307.2,3686.4,USD,"DT Inbound: Internet (15 TB per month), DT Outbound: Amazon CloudFront (15 TB per month), DT Intra-Region: (15 TB per month), Data transfer cost (307.2)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
