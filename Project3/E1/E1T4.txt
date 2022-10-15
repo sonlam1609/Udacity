@@ -1,0 +1,17 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+InstanceProfileRole: Binding policy with c3-app-InstanceRole violates Least Privilege Access
+    - Allow full access to all S3 buckets.
+    - Only allow access to the S3 bucket: cand-c3-free-cooking - ****, not any other S3 bucket including cand-c3-secret-cooking - ****
+
+# Poor practice 2
+WebAppSG: Inbound rule too open
+    - It only allows requests coming from ALB.
+    - Direct SSH to the web application server should not be allowed
+      - Use AWS system manager if necessary
+
+# Poor practice 3
+RecipeWebServiceInstance: Not in private subnet even though server is behind ALB
+
+# Poor practice 4
+S3BucketRecipesSecret: No server-side encryption, anyone with access to the account can read the data

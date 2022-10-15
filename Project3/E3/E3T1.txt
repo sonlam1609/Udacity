@@ -1,0 +1,6 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+- UnauthorizedAccess: EC2 / SSHBruteForce
+    - Two discoveries
+      1. Attack Instance is doing SSH brute force attacks against Web Service Instance
+      2. Web Service instance under attack
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.

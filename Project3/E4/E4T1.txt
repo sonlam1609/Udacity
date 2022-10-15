@@ -1,0 +1,7 @@
+1. To prevent SSH bruteforce attack
+    - Remove SSH password login from web service instance
+    - Move the web service instance to the private subnet
+    - Updated WebAppSG to only allow requests from the load balancer.
+
+2. Enable server-side encryption in those S3 buckets with a KMS key, and access to that key will only be granted to a role assigned to privileged business users.
+     So even if the instances can access S3, they won't be able to decrypt and read the file.
